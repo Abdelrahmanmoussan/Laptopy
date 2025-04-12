@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Laptopy.Models
+namespace Laptopy.DTOs.Request
 {
-    public class ContactUs
+    public class ContactUsRequest
     {
-        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; } = string.Empty;

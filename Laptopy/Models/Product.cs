@@ -1,8 +1,12 @@
-﻿namespace Laptopy.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Laptopy.Models
 {
     public class Product
     {
         public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
